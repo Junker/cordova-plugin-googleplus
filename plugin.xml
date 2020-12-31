@@ -30,7 +30,8 @@
   <!-- android -->
   <platform name="android">
 
-	<preference name="PLAY_SERVICES_VERSION" default="15.0.1"/>
+	<preference name="PLAY_SERVICES_AUTH_VERSION" default="15.0.1"/>
+	<preference name="PLAY_SERVICES_IDENTITY_VERSION" default="15.0.1"/>
     <framework src="com.google.android.gms:play-services-auth:$PLAY_SERVICES_VERSION" />
     <framework src="com.google.android.gms:play-services-identity:$PLAY_SERVICES_VERSION" />
 
@@ -52,7 +53,7 @@
 
   <!-- ios -->
   <platform name="ios">
-
+  <preference name="IOS_GOOGLE_UTILITIES_VERSION" default="~> 7.0.0"/>
     <config-file target="config.xml" parent="/*">
       <feature name="GooglePlus">
         <param name="ios-package" value="GooglePlus"/>
